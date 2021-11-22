@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Доставка пиццы</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container text-center">
+			<img src="img/logo/logo.svg" width="130" alt="Пицца">
+			<div class="top">Доставка пиццы</div>
+		</div>
+	</header>
+
+	<div class="container text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="card mb-4">
+						<a href="index.html" class="h3">Главная</a>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card mb-4">
+						<a href="korzina.html" class="h3">Корзина</a>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card mb-4">
+						<a href="info.html" class="h3">Информация</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card mb-4">
+			<div class="card-body">
+				<h5 class="card-title">Ваш заказ</h4>
+				<div data-cart-empty class="alert alert-secondary" role="alert">
+					Корзина пуста
+				</div>
+				<div class="cart-wrapper">
+					<div class="cart-item" data-id="02">
+						<div class="cart-item__top">
+							<div class="cart-item__img">
+								<img src="img/pizza/pizza1.png" alt="">
+							</div>
+							<div class="cart-item__desc">
+								<div class="cart-item__title">Пицца1</div>
+								<div class="cart-item__details">
+
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter="">1</div>
+										<div class="items__control" data-action="plus">+</div>
+									</div>
+
+									<div class="price">
+										<div class="money">510 ₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<div class="cart-total">
+				<p><span class="h5">Доставка:</span> <span class="delivery-cost free">бесплатно</span> </p>
+				<p><span class="h5">Итого:</span> <span class="total-price">510</span> <span class="rouble">₽</span></p>
+			</div>
+		</div>
+
+		<div id="order-form" class="card-body border-top">
+			<h5 class="card-title">Оформление заказа</h5>
+			<form>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Ваше имя">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Адрес доставки">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="E-mail почта">
+				</div>
+				<button type="submit" class="btn btn-primary">Заказать</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Подключаем скрипты -->
+	<script src="./js/addtocart.js"></script>
+	<script src="./js/counter.js"></script>
+</body>
